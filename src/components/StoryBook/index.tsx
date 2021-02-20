@@ -6,23 +6,14 @@ import { useTheme } from "@material-ui/core/styles";
 import { colors } from "../../styles/theme";
 import TypographyComponent from "./TypographyComponent";
 import TextFieldComponent from "./TextFieldComponent";
+import ButtonsComponent from "./ButtonsComponent";
 
 const StoryBook = () => {
   const theme = useTheme();
   return (
-    <Box display="flex" pt={1} bgcolor={colors.black} color={colors.white}>
+    <Box display="flex" pt={1}>
       <Box p={2.5}>
-        <Box>
-          <Button size="large" variant="contained" color="secondary">
-            Sign Up
-          </Button>
-          <Button size="large" variant="contained" color="secondary">
-            Sign Up
-          </Button>
-          <Button size="small" variant="contained" color="secondary">
-            Sign Up
-          </Button>
-        </Box>
+        <ButtonsComponent />
         <TextFieldComponent />
       </Box>
       <TypographyComponent />
