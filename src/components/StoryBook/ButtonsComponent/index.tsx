@@ -20,7 +20,8 @@ const ButtonsComponent = () => {
       <Typography variant="subtitle2" gutterBottom>
         Buttons
       </Typography>
-      <Box marginTop={2} marginBottom={2}>
+
+      <Box marginTop={2} marginBottom={4} display="flex" alignItems="center">
         <Button size="large" variant="contained" color="secondary">
           Sign Up
         </Button>
@@ -31,7 +32,8 @@ const ButtonsComponent = () => {
           Sign Up
         </Button>
       </Box>
-      <Box marginTop={2} marginBottom={2}>
+
+      <Box marginTop={2} marginBottom={4}>
         <Button size="large" variant="contained" color="primary">
           Sign Up
         </Button>
@@ -42,7 +44,7 @@ const ButtonsComponent = () => {
           Sign Up
         </Button>
       </Box>
-      <Box marginTop={2} marginBottom={2}>
+      <Box marginTop={4} marginBottom={4}>
         <Button size="large" variant="contained" color="default">
           Sign Up
         </Button>
