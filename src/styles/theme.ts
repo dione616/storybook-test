@@ -4,6 +4,8 @@ export const colors = {
   black: "#000000",
   white: "#ffffff",
   success: "#6D9B12",
+  primary: "#4285F4",
+  default: "#E5E5E5",
 };
 export const size = {
   large: {
@@ -39,6 +41,26 @@ const theme = createMuiTheme({
           //you want this to be the same as the backgroundColor above
           backgroundColor: colors.success,
         },
+      },
+      containedPrimary: {
+        backgroundColor: colors.primary,
+        "&:hover": {
+          //you want this to be the same as the backgroundColor above
+          backgroundColor: colors.primary,
+        },
+      },
+      root: {
+        textTransform: "capitalize",
+        backgroundColor: colors.primary,
+        borderRadius: "6px",
+        "&:hover": {
+          //you want this to be the same as the backgroundColor above
+          backgroundColor: colors.default,
+        },
+      },
+      contained: {
+        boxShadow: "none",
+        marginRight: "15px",
       },
       sizeLarge: {
         width: size.large.width,
